@@ -1,0 +1,22 @@
+/*.bg {
+  background: url('../assets/jumbotron.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+
+  top:50;
+  left:0;
+  z-index: -1;
+}*/
+
+/*.jumbotron {
+  height: 200px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background-color:#AFA;
+}*/
+
+.container p{
+	text-indent: 50px;
+	font-size: 16pt;
+	font-family: 'Times New Roman';
+}

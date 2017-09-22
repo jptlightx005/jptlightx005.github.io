@@ -11,6 +11,18 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+			var jumboHeight = $('.jumbotron').outerHeight();
+			function parallax(){
+			    var scrolled = $(window).scrollTop();
+			    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+			}
+
+			$(window).scroll(function(e){
+			    parallax();
+			});
+		</script>
 	</head>
 
 	<body>
@@ -19,15 +31,45 @@
 		    <div class="container-fluid">
 
 		        <div class="navbar-header">
-		            <a class="navbar-brand" href="#">PRMS</a>
+		            <a class="navbar-brand" href="#">JPT</a>
 		        </div>
 		        <ul class="nav navbar-nav">
-		            <li><a href="/">Home</a></li>
-		            <li><a href="about">About</a></li>
-		            <li><a href="help">Contact</a></li>
+		            <li class="active"><a href="https://jptlightx005.github.io">About</a></li>
+		            <li><a href="portfolio.html">Portfolio</a></li>
+		            <!-- <li><a href="contact.html">Contact</a></li> -->
 		        </ul>
 		    </div>
 		</nav>
+
+		<!-- Login -->
+		<div class="bg"></div>
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-6">
+					<h3 class="text-justify"><i>"It's not about how hard it is. It's about how passionate you are to learn it."</i></h3> 
+					<h4 class="text-right">-John Patrick Teruel</h4>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+
+		</div>
+
+		<div class="container">
+		    <div class="row">
+		        <div class="col-sm-12 text-justify">
+		            <p>
+		                Hello! I'm John Patrick Teruel! I'm a developer who likes to learn anything I get my hands on. Currently, I am employed as a Mobile Developer and I develop apps in iOS Platform. In my free time, I like to create native applications using the .NET Framework. I also create web applications using HTML, CSS and jQuery for the front-end, PHP for the backend and MySQL for the database.
+		            </p>
+		            <p>
+		            	As an iOS Developer, I was able to learn creating applications in iOS Platform. I have been involved and exposed in different kinds of projects. I can code in Objective-C and Swift using the XCode IDE in MacOS. For over a year, I learned a lot of UX and UI standards used to create the applications. At the same time, I also a learned more programming practices and developed a solid understanding in Object-Oriented Programming.
+		            </p>
+		            <p>
+		            	As a freelancer, I learned to create different kinds of Applications. I am developing applications for students' thesis projects. Some of the applications I've developed makes use of Devices such as a USB 3G Modem and a Biometric Fingerprint Scanner. I learned to use SQLite as their database. I also have created a website using wordpress.
+		            </p>
+		        </div>
+		    </div>
+		</div>
 	</body>
 
 </html>
